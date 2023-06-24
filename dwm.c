@@ -1631,7 +1631,7 @@ run(void)
 
 void
 runAutostart(void) {
-    system("sh /home/GarytheNoob/workspace/new-dwm/scripts/autostart.sh");
+    system("sh /home/GarytheNoob/workspace/dwm-build/scripts/autostart.sh");
 }
 
 void
