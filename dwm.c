@@ -59,6 +59,10 @@
 #define TEXTW(X)                (drw_fontset_getwidth(drw, (X)) + lrpad)
 #define OPAQUE                  0xffU
 
+static const char autostartCmd[] ="sh /home/GarytheNoob/workspace/dwm-build/scripts/autostart.sh";
+
+
+
 /* enums */
 enum { CurNormal, CurResize, CurMove, CurLast }; /* cursor */
 enum { SchemeNorm, SchemeSel, SchemeHid }; /* color schemes */
@@ -1631,7 +1635,7 @@ run(void)
 
 void
 runAutostart(void) {
-    system("sh /home/GarytheNoob/workspace/dwm-build/scripts/autostart.sh");
+    system(autostartCmd);
 }
 
 void
