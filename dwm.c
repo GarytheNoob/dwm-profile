@@ -59,7 +59,7 @@
 #define TEXTW(X)                (drw_fontset_getwidth(drw, (X)) + lrpad)
 #define OPAQUE                  0xffU
 
-static const char autostartCmd[] ="sh /home/GarytheNoob/workspace/dwm-build/scripts/autostart.sh";
+// static const char autostartCmd[] ="sh /home/GarytheNoob/workspace/dwm-build/scripts/autostart.sh";
 
 
 
