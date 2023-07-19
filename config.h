@@ -44,8 +44,9 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   focusopacity    unfocusopacity     monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           1.0,            inactiveopacity,   -1 },
-	{ "Firefox",  NULL,       NULL,       0,            0,           1.0,            activeopacity,   -1 },
-	{ "firefox",  NULL,       NULL,       0,            0,           1.0,            activeopacity,   -1 },
+	{ "Firefox",  NULL,       NULL,       1 << 1,       0,           1.0,            activeopacity,     -1 },
+	{ "firefox",  NULL,       NULL,       1 << 1,       0,           1.0,            activeopacity,     -1 },
+	{ "QQ",       NULL,       NULL,       1 << 2,       0,           1.0,            inactiveopacity,   -1 },
 };
 
 /* layout(s) */
