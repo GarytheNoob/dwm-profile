@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# 使用 xrandr 命令获取连接的显示器信息，并提取 eDP 和 HDMI 显示器名称 connected_displays=$(xrandr | grep " connected" | awk '{print $1}') edp_display=""
+# 使用 xrandr 命令获取连接的显示器信息，并提取 eDP 和 HDMI 显示器名称 
 connected_displays=$(xrandr | grep " connected" | awk '{print $1}')
 hdmi_display=""
 

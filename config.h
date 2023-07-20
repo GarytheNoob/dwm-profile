@@ -20,7 +20,7 @@ static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
-static const char autostartCmd[] ="sh /home/GarytheNoob/workspace/dwm-build/scripts/autostart.sh";
+static const char autostartCmd[] ="sh /home/GarytheNoob/workspace/dwm-build/scripts/autostart.sh"; /* the autostart command */
 static const unsigned int baralpha = 0xd0;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
@@ -43,11 +43,13 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     isfloating   focusopacity    unfocusopacity     monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           1.0,            inactiveopacity,   -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 1,       0,           1.0,            activeopacity,     -1 },
-	{ "firefox",  NULL,       NULL,       1 << 1,       0,           1.0,            activeopacity,     -1 },
-	{ "QQ",       NULL,       NULL,       1 << 2,       0,           1.0,            inactiveopacity,   -1 },
+	/* class      instance    title         tags mask     isfloating   focusopacity    unfocusopacity     monitor */
+	{ "Gimp",     NULL,       NULL,         0,            1,           1.0,            inactiveopacity,   -1 },
+	{  NULL,     NULL,        "图片查看器", 0,            1,           1.0,            inactiveopacity,   -1 },
+	{  NULL,     NULL,        "图片查看",   0,            1,           1.0,            inactiveopacity,   -1 },
+	{ "Firefox",  NULL,       NULL,         1 << 1,       0,           1.0,            activeopacity,     -1 },
+	{ "firefox",  NULL,       NULL,         1 << 1,       0,           1.0,            activeopacity,     -1 },
+	{ "QQ",       NULL,       NULL,         1 << 2,       0,           1.0,            inactiveopacity,   -1 },
 };
 
 /* layout(s) */
@@ -61,8 +63,9 @@ static const Layout layouts[] = {
 	{ "[]=",      tile },    /* first entry is default */
 	{ "><>",      NULL },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
-    { "+++",      grid},
     { "===",      magicgrid},
+	{ "|M|",      centeredmaster },
+	{ ">M>",      centeredfloatingmaster },
 };
 
 /* key definitions */
@@ -117,14 +120,15 @@ static const Key keys[] = {
 	{ MODKEY|Mod4Mask,              XK_o,      incrohgaps,     {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_y,      incrovgaps,     {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_o,      incrovgaps,     {.i = -1 } },
-	{ MODKEY,                       XK_Return, zoom,           {0} },
+	{ MODKEY|ShiftMask,             XK_Return, zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
 	{ MODKEY|ShiftMask,             XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY|ShiftMask,             XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY|ShiftMask,             XK_m,      setlayout,      {.v = &layouts[2]} },
-/*	{ MODKEY|ShiftMask,             XK_g,      setlayout,      {.v = &layouts[3]} },*/
-	{ MODKEY|ShiftMask,             XK_g,      setlayout,      {.v = &layouts[4]} },
+	{ MODKEY|ShiftMask,             XK_g,      setlayout,      {.v = &layouts[3]} },
+	{ MODKEY|ShiftMask,             XK_u,      setlayout,      {.v = &layouts[4]} },
+	{ MODKEY|ShiftMask,             XK_o,      setlayout,      {.v = &layouts[5]} },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
