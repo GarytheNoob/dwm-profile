@@ -1,5 +1,6 @@
 dwm
 *.o
+*.1
 *.orig
 *.rej
 dwm.png

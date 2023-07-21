@@ -15,6 +15,6 @@ done
 
 # 将 HDMI 显示器放置在 eDP 的右侧
 if [ -n "$hdmi_display" ] && [ -n "$edp_display" ]; then
-    xrandr -o right
-    xrandr --output "$hdmi_display" --auto --right-of "$edp_display" --mode 2560x1440 --rate 144
+    xrandr --output "$edp_display" --off
+    xrandr --output "$hdmi_display" --auto --mode 2560x1440 --rate 144
 fi
