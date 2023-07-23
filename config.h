@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int gappih    = 10;       /* horiz inner gap between windows */
 static const unsigned int gappiv    = 10;       /* vert inner gap between windows */
@@ -19,15 +19,16 @@ static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
+static const char col_gray5[]       = "#888888";
 static const char col_cyan[]        = "#005577";
 static const char autostartCmd[] ="sh /home/GarytheNoob/workspace/dwm-build/scripts/autostart.sh"; /* the autostart command */
 static const unsigned int baralpha = 0xd0;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
-	[SchemeHid]  = { col_cyan,  col_gray1, col_cyan  },
+	[SchemeNorm] = { col_gray3, col_gray1,  col_gray1 },
+	[SchemeSel]  = { col_gray2, col_gray4,  col_gray3 },
+	[SchemeHid]  = { col_gray5,  col_gray1,  col_cyan  },
 };
 static const unsigned int alphas[][3]      = {
     /*               fg      bg        border*/
@@ -36,7 +37,7 @@ static const unsigned int alphas[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "󰣇", "󰈹", "󰭹", "", "", "󰬿", "󰭀", "󰭁", "󰖟" };
+static const char *tags[] = { "󰣇", "󰈹", "󰭹", "", "󰈙", "󰎈", "", "", "󰓓" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -45,7 +46,8 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title         tags mask     isfloating   focusopacity    unfocusopacity     monitor */
 	{ "Gimp",     NULL,       NULL,         0,            1,           1.0,            inactiveopacity,   -1 },
-	{  NULL,     NULL,        "图片查看器", 0,            1,           1.0,            inactiveopacity,   -1 },
+	{ "Alacritty",     NULL,       NULL,         0,            1,           1.0,            inactiveopacity,   -1 },
+	{ "QQ","qq",        "图片查看器\0", 0,            1,           1.0,            inactiveopacity,   -1 },
 	{  NULL,     NULL,        "图片查看",   0,            1,           1.0,            inactiveopacity,   -1 },
 	{ "Firefox",  NULL,       NULL,         1 << 1,       0,           1.0,            activeopacity,     -1 },
 	{ "firefox",  NULL,       NULL,         1 << 1,       0,           1.0,            activeopacity,     -1 },
@@ -60,12 +62,12 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
+	{ " 󱂫 ",      tile },    /* first entry is default */
+	{ " 󱂬 ",      NULL },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
-    { "===",      magicgrid},
-	{ "|M|",      centeredmaster },
-	{ ">M>",      centeredfloatingmaster },
+    { " 󰹪 ",      magicgrid},
+	{ " 󰕫 ",      centeredmaster },
+	{ " 󰕬 ",      centeredfloatingmaster },
 };
 
 /* key definitions */
@@ -110,8 +112,8 @@ static const Key keys[] = {
 	{ MODKEY|ControlMask|ShiftMask,    XK_l,      incrogaps,      {.i = -1 } },
 	{ MODKEY|ShiftMask|ControlMask,  XK_h,      incrigaps,      {.i = +1 } },
 	{ MODKEY|ShiftMask|ControlMask,  XK_l,      incrigaps,      {.i = -1 } },
-	{ MODKEY|Mod4Mask,              XK_0,      togglegaps,     {0} },
-	{ MODKEY|Mod4Mask|ShiftMask,    XK_0,      defaultgaps,    {0} },
+	{ MODKEY|Mod1Mask,              XK_0,      togglegaps,     {0} },
+	{ MODKEY|Mod1Mask|ShiftMask,    XK_0,      defaultgaps,    {0} },
 	{ MODKEY,                       XK_y,      incrihgaps,     {.i = +1 } },
 	{ MODKEY,                       XK_o,      incrihgaps,     {.i = -1 } },
 	{ MODKEY|ControlMask,           XK_y,      incrivgaps,     {.i = +1 } },
