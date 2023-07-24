@@ -3,6 +3,7 @@
 # 使用 xrandr 命令获取连接的显示器信息，并提取 eDP 和 HDMI 显示器名称 
 connected_displays=$(xrandr | grep " connected" | awk '{print $1}')
 hdmi_display=""
+edp_display=""
 
 # 遍历每个显示器并识别 eDP 和 HDMI 显示器
 for display in $connected_displays; do

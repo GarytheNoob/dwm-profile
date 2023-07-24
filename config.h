@@ -13,7 +13,7 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const double activeopacity   = 0.9f;     /* Window opacity when it's focused (0 <= opacity <= 1) */
 static const double inactiveopacity = 0.7f;     /* Window opacity when it's inactive (0 <= opacity <= 1) */
 static const Bool viewontag         = True;     /* Switch view on tag switch */
-static const char *fonts[]          = { "JetBrainsMono Nerd Font Mono:size=10" , "Noto Sans Mono CJK SC:size=10"};
+static const char *fonts[]          = { "JetBrainsMono Nerd Font Mono:size=16" , "Noto Sans Mono CJK SC:size=16"};
 static const char dmenufont[]       = "JetBrainsMono Nerd Font Mono:size=12";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
@@ -46,11 +46,11 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title         tags mask     isfloating   focusopacity    unfocusopacity     monitor */
 	{ "Gimp",     NULL,       NULL,         0,            1,           1.0,            inactiveopacity,   -1 },
-	{ "Alacritty",     NULL,       NULL,         0,            1,           1.0,            inactiveopacity,   -1 },
-	{ "QQ","qq",        "图片查看器\0", 0,            1,           1.0,            inactiveopacity,   -1 },
-	{  NULL,     NULL,        "图片查看",   0,            1,           1.0,            inactiveopacity,   -1 },
+	{ "Alacritty",NULL,       NULL,         0,            1,           1.0,            inactiveopacity,   -1 },
 	{ "Firefox",  NULL,       NULL,         1 << 1,       0,           1.0,            activeopacity,     -1 },
 	{ "firefox",  NULL,       NULL,         1 << 1,       0,           1.0,            activeopacity,     -1 },
+	{ "Minecraft",  NULL,       NULL,       0,            0,           1.0,            activeopacity,     -1 },
+	{ "QQ",       NULL,       NULL,         1 << 2,       0,           1.0,            inactiveopacity,   -1 },
 	{ "QQ",       NULL,       NULL,         1 << 2,       0,           1.0,            inactiveopacity,   -1 },
 };
 

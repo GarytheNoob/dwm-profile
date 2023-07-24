@@ -1,1 +1,1 @@
-shuf -e -n1 ~/wallpaper/* | xargs feh --bg-fill
+shuf -e -n1 ~/wallpapers/* | xargs feh --bg-fill

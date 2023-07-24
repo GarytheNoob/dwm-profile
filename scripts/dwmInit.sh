@@ -1,3 +1,3 @@
-picom &
+picom --experimental-backends &
 sxhkd &
-clash-verge &
+clash &
