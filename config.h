@@ -26,7 +26,7 @@ static const char col_one_gray3[]   = "#abb2bf";
 static const char col_one_gray4[]   = "#fffefe";
 static const char col_one_blue[]   = "#61afef";
 static const char col_cyan[]        = "#005577";
-static const char autostartCmd[] ="sh /home/GarytheNoob/workspace/dwm-build/scripts/autostart.sh"; /* the autostart command */
+static const char autostartCmd[] ="/bin/bash /home/GarytheNoob/script/dwm/autostart.sh"; /* the autostart command */
 static const unsigned int baralpha = 0xd0;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
@@ -86,9 +86,6 @@ static const Layout layouts[] = {
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
-static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-// static const char *dmenucmd[] = { "rofi", "-show", "drun", NULL};
-// static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *stcmd[]  = { "st", NULL };
 static const char *alaccmd[]  = { "alacritty", NULL };
 static const char *kittycmd[]  = { "kitty", NULL };
