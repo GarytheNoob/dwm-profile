@@ -32,7 +32,7 @@ static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_one_gray3, col_one_gray1,  col_one_gray1 },
-	[SchemeSel]  = { col_one_gray2, col_one_blue,  col_one_blue },
+	[SchemeSel]  = { col_one_gray4, col_one_blue,  col_one_blue },
 	[SchemeHid]  = { col_one_gray3, col_one_gray1, col_one_gray1},
 };
 static const unsigned int alphas[][3]      = {
@@ -51,6 +51,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title         tags mask     isfloating   focusopacity    unfocusopacity     monitor */
 	{ "Gimp",     NULL,       NULL,         0,            1,           1.0,            inactiveopacity,   -1 },
+	{ NULL,       NULL,       "图片",       0,            1,           1.0,            inactiveopacity,   -1 },
 	{ "Firefox",  NULL,       NULL,         1 << 1,       0,           1.0,            activeopacity,     -1 },
 	{ "firefox",  NULL,       NULL,         1 << 1,       0,           1.0,            activeopacity,     -1 },
 	{ "Minecraft",  NULL,       NULL,       0,            0,           1.0,            activeopacity,     -1 },
