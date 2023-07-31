@@ -97,10 +97,10 @@ static const char *qqcmd[]  = { "linuxqq", NULL };
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	// { MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
-	{ MODKEY|ControlMask,           XK_Return, spawn,          {.v = alaccmd } },
-	{ MODKEY,                       XK_Return, spawn,          {.v = kittycmd } },
-	{ MODKEY,                       XK_f,      spawn,          {.v = firefoxcmd } },
-	{ MODKEY,                       XK_q,      spawn,          {.v = qqcmd } },
+	// { MODKEY|ControlMask,           XK_Return, spawn,          {.v = alaccmd } },
+	// { MODKEY,                       XK_Return, spawn,          {.v = kittycmd } },
+	// { MODKEY,                       XK_f,      spawn,          {.v = firefoxcmd } },
+	// { MODKEY,                       XK_q,      spawn,          {.v = qqcmd } },
 	// { MODKEY,                       XK_a,      spawn,          {.v = flameshotcmd} },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstackvis,  {.i = +1 } },
