@@ -1,3 +1,24 @@
+/*  
+ * FILENAME: config.h
+ * DESCRIPTION: config file for suckless' dwm(Dynamic Window Manager)
+ * ORIGIN: https://dwm.suckless.org
+ *
+ * This file is partly or fully edited by
+ *  ▄▄▄  ▄  ▄▄  ▄ ▄      ▄▄     
+ *  █   █ █ █▄▀ █▄█   ▄█▀▀▀▀█▄  
+ *  █▄█ █▀█ █ █  █   █▀      ▀▀ 
+ *  ▄▄▄ ▄ ▄ ▄▄▄      █    ▀▄▄   
+ *   █  █▄█ █▄▄      █▄     ▀█▄ 
+ *   █  █ █ █▄▄       ▀█▄▄▄▄█▀  
+ *  ▄▄▄ ▄▄▄ ▄▄▄ ▄▄     ▄▄█▀     
+ *  █ █ █ █ █ █ █▄▀  ▄█▀        
+ *  █ █ █▄█ █▄█ █▄▀   ▀█▄▄      
+ *                       ▀▀     
+ * GitHub: https://github.com/GarytheNoob
+ * 
+ */
+ 
+
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
