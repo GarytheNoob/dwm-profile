@@ -75,9 +75,11 @@ static const Rule rules[] = {
 	{ NULL,       NULL,       "图片",       0,            1,           1.0,            inactiveopacity,   -1 },
 	{ "Firefox",  NULL,       NULL,         1 << 1,       0,           1.0,            activeopacity,     -1 },
 	{ "firefox",  NULL,       NULL,         1 << 1,       0,           1.0,            activeopacity,     -1 },
-	{ "Minecraft",  NULL,       NULL,       0,            0,           1.0,            activeopacity,     -1 },
+	{ "Minecraft",NULL,       NULL,         0,            0,           1.0,            activeopacity,     -1 },
 	{ "QQ",       NULL,       NULL,         1 << 2,       0,           1.0,            inactiveopacity,   -1 },
 	{ "QQ",       NULL,       NULL,         1 << 2,       0,           1.0,            inactiveopacity,   -1 },
+	{ "telegram", NULL,       NULL,         1 << 2,       0,           1.0,            inactiveopacity,   -1 },
+	{ "discord",  NULL,       NULL,         1 << 2,       0,           1.0,            inactiveopacity,   -1 },
 };
 
 /* layout(s) */
