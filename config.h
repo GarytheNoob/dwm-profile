@@ -79,7 +79,12 @@ static const Rule rules[] = {
 	{ "QQ",       NULL,       NULL,         1 << 2,       0,           1.0,            inactiveopacity,   -1 },
 	{ "QQ",       NULL,       NULL,         1 << 2,       0,           1.0,            inactiveopacity,   -1 },
 	{ "telegram", NULL,       NULL,         1 << 2,       0,           1.0,            inactiveopacity,   -1 },
+	{ "Telegram", NULL,       NULL,         1 << 2,       0,           1.0,            inactiveopacity,   -1 },
 	{ "discord",  NULL,       NULL,         1 << 2,       0,           1.0,            inactiveopacity,   -1 },
+
+	{ NULL,       NULL,       "wps",        0,            1,           1.0,            inactiveopacity,   -1 },
+	{ NULL,       NULL,       "wpp",        0,            1,           1.0,            inactiveopacity,   -1 },
+	{ NULL,       NULL,       "et",         0,            1,           1.0,            inactiveopacity,   -1 },
 };
 
 /* layout(s) */
@@ -183,7 +188,7 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	// { MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
 
 /* button definitions */
