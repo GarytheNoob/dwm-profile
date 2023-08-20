@@ -170,8 +170,8 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_o,      setlayout,      {.v = &layouts[5]} },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
-	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
-	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
+	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } }, // view all tags
+	{ MODKEY|ShiftMask,             XK_h,      tag,            {.ui = ~0 } }, // tag all tags (0-8) to the focused client
 	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
@@ -198,6 +198,7 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_d,                      6)
 	TAGKEYS(                        XK_x,                      7)
 	TAGKEYS(                        XK_c,                      8)
+	{ MODKEY,                       XK_z,      view,           {.ui = ~0 } }, // view all tags
 	// { MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
 
