@@ -141,7 +141,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_j,      focusstackhid,  {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_k,      focusstackhid,  {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
-	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
+	{ MODKEY,                       XK_o,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
 	{ MODKEY|ControlMask,              XK_h,      incrgaps,       {.i = +1 } },
@@ -196,7 +196,7 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_w,                      3)
 	TAGKEYS(                        XK_e,                      4)
 	TAGKEYS(                        XK_s,                      5)
-	TAGKEYS(                        XK_f,                      6)
+	TAGKEYS(                        XK_d,                      6)
 	TAGKEYS(                        XK_x,                      7)
 	TAGKEYS(                        XK_v,                      8)
 	{ MODKEY,                       XK_z,      view,           {.ui = ~0 } }, // view all tags
@@ -208,7 +208,7 @@ static const Key keys[] = {
 static const Button buttons[] = {
 	/* click                event mask      button          function        argument */
 	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
-	{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
+	{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]}   },
 	{ ClkWinTitle,          0,              Button1,        togglewin,      {0} },
 	{ ClkWinTitle,          0,              Button2,        zoom,           {0} },
 	{ ClkStatusText,        0,              Button2,        spawn,          {.v = alaccmd } },
