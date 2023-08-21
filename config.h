@@ -88,7 +88,8 @@ static const Rule rules[] = {
 	{ NULL,       "wps",      NULL,         1 << 4,            0,           1.0,            inactiveopacity,   -1 },
 	{ NULL,       "wpp",      NULL,         1 << 4,            0,           1.0,            inactiveopacity,   -1 },
 	{ NULL,       "et",       NULL,         1 << 4,            0,           1.0,            inactiveopacity,   -1 },
-	{ NULL,       "libreoffice",       NULL,         1 << 4,            0,           1.0,            inactiveopacity,   -1 },
+    { NULL,       "libreoffice",       NULL,1 << 4,            0,           1.0,            inactiveopacity,   -1 },
+	{ "libreoffice",NULL,     NULL,         1 << 4,            0,           1.0,            inactiveopacity,   -1 },
 };
 
 /* layout(s) */
