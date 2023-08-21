@@ -197,7 +197,7 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_s,                      5)
 	TAGKEYS(                        XK_d,                      6)
 	TAGKEYS(                        XK_x,                      7)
-	TAGKEYS(                        XK_c,                      8)
+	TAGKEYS(                        XK_v,                      8)
 	{ MODKEY,                       XK_z,      view,           {.ui = ~0 } }, // view all tags
 	// { MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
