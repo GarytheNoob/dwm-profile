@@ -1,4 +1,4 @@
-/*  
+/*
  * FILENAME: config.h
  * DESCRIPTION: config file for suckless' dwm(Dynamic Window Manager)
  * ORIGIN: https://dwm.suckless.org
@@ -181,8 +181,8 @@ static const Key keys[] = {
     { MODKEY|ShiftMask,             XK_s,      changefocusopacity,   {.f = -0.025}},
     { MODKEY|ShiftMask,             XK_z,      changeunfocusopacity, {.f = +0.025}},
     { MODKEY|ShiftMask,             XK_x,      changeunfocusopacity, {.f = -0.025}},
-	{ MODKEY,                       XK_s,      show,           {0} },
-	{ MODKEY|ShiftMask,             XK_s,      showall,        {0} },
+	{ MODKEY,                       XK_Up,      show,           {0} },
+	{ MODKEY|ShiftMask,             XK_Up,      showall,        {0} },
 	{ MODKEY,                       XK_Down,      hide,           {0} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
