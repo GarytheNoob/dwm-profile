@@ -33,7 +33,7 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const double activeopacity   = 0.90f;     /* Window opacity when it's focused (0 <= opacity <= 1) */
 static const double inactiveopacity = 0.75f;     /* Window opacity when it's inactive (0 <= opacity <= 1) */
-static const Bool viewontag         = True;     /* Switch view on tag switch */
+static const bool viewontag         = true;     /* Switch view on tag switch */
 static const char *fonts[]          = { "JetBrainsMono Nerd Font Mono:size=16" , "Noto Sans Mono CJK SC:size=16"};
 static const char dmenufont[]       = "JetBrainsMono Nerd Font Mono:size=12";
 // static const char col_gray1[]       = "#222222";
@@ -47,7 +47,7 @@ static const char col_one_gray3[]   = "#abb2bf";
 static const char col_one_gray4[]   = "#fffefe";
 static const char col_one_blue[]   = "#61afef";
 static const char col_cyan[]        = "#005577";
-static const char autostartCmd[] ="/bin/bash /home/GarytheNoob/script/dwm/autostart.sh"; /* the autostart command */
+static const char autostartCmd[] ="/bin/bash /home/GarytheNoob/script/autostart.sh"; /* the autostart command */
 static const unsigned int baralpha = 0xd0;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
